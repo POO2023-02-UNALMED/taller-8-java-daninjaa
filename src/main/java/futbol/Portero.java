@@ -43,13 +43,12 @@ public class Portero extends Futbolista{
 	
 	@Override
 	public int compareTo(Futbolista futbolista) {
-		if (!(futbolista instanceof Portero)) {
-			return 0;
+		if (futbolista instanceof Portero) {
+			return Math.abs(this.golesRecibidos - futbolista.golesRecibidos);
 		}
 		
 		else {
-			Portero arquero = (Portero)futbolista; 
-			return Math.abs(this.golesRecibidos - arquero.golesRecibidos);
+			return 0;
 		}
 	}
 
