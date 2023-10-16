@@ -26,14 +26,14 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 			return false;
 		}
 		
-		if-else (this.edad != f.edad){
+		else if (this.edad != f.edad){
 			return false;
 		}
 		
-		if-else (this.posicion != f.posicion){
+		else if(this.posicion != f.posicion){
 			return false;
 		}
-		else { 
+		else{ 
 			return true;
 		}
 	}
