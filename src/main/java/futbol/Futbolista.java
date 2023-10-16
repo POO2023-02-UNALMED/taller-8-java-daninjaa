@@ -18,28 +18,23 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 	public String toString() {
 		return String.format("El futbolista %s tiene %d, y juega de posicion %s", this.nombre, this.edad, this.posicion); 
 	}
-	
-	public int compareTo(Futbolista f) {
-		int comparar_edad = Math.abs(this.edad - f.edad);
-		if (comparar_edad != 0) {
-			return comparar_edad;
-		}
-		
-		int comparar_nombre = this.nombre.compareTo(f.nombre);
-		if (comparar_nombre != 0) {
-			return comparar_nombre;
-		} 
-		
-		return this.posicion.compareTo(f.posicion);
-	}
+	@Override
+	public int compareTo(Futbolista f);
 	
 	public boolean equals(Futbolista f) {
-		if (this.compareTo(f) == 0) {
-			return true;
+		if (this.nombre != f.nombre) {
+			return false;
 		}
 		
-		else { 
+		if-else (this.edad != f.edad){
 			return false;
+		}
+		
+		if-else (this.posicion != f.posicion){
+			return false;
+		}
+		else { 
+			return true;
 		}
 	}
 	
