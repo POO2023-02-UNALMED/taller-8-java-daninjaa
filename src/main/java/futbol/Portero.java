@@ -1,5 +1,4 @@
 package futbol;
-import java.lang.Math;
 public class Portero extends Futbolista{
 	
 	public short golesRecibidos;
@@ -44,7 +43,8 @@ public class Portero extends Futbolista{
 	@Override
 	public int compareTo(Futbolista futbolista) {
 		if (futbolista instanceof Portero) {
-			return Math.abs(this.golesRecibidos - futbolista.golesRecibidos);
+			Portero portero = (Portero) futbolista;
+			return Math.abs(this.golesRecibidos - portero.golesRecibidos);
 		}
 		
 		else {
