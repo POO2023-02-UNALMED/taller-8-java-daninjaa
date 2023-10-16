@@ -30,7 +30,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 			return comparar_nombre;
 		} 
 		
-		return this.posicion.compareTo(f.posicion)
+		return this.posicion.compareTo(f.posicion);
 	}
 	
 	public boolean equals(Futbolista f) {
