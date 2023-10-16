@@ -19,7 +19,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 		return String.format("El futbolista %s tiene %d, y juega de posicion %s", this.nombre, this.edad, this.posicion); 
 	}
 	@Override
-	public int compareTo(Futbolista f);
+	public abstract int compareTo(Futbolista f);
 	
 	public boolean equals(Futbolista f) {
 		if (this.nombre != f.nombre) {
