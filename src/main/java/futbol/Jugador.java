@@ -1,6 +1,6 @@
 package futbol;
 
-public class Jugador extends Futbolista{
+public class Jugador extends Futbolista implements Comparable<Futbolista>{
 	public short golesMarcados;
 	public byte dorsal;
 	
