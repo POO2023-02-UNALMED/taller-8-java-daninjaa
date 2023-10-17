@@ -10,10 +10,9 @@ public class Portero extends Futbolista{
 		this.dorsal = dorsal;
 	}
 	
-	@Override
-	public String toString() {
-		return String.format("El futbolista %s tiene %d, y juega de %s con el dorsal %d. Le han marcado %d.", super.getNombre(), super.getEdad(), super.getPosicion(), this.dorsal, this.golesRecibidos); 
-	}
+	public String toString(){
+        return super.toString() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
+    }
 	
 	public void setNombre(String nombre) {
 		super.setNombre(nombre);

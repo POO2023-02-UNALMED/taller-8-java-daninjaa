@@ -46,4 +46,8 @@ public class Jugador extends Futbolista {
 	public String getPosicion() {
 		return super.getPosicion();
 	}
+	
+	public  String toString(){
+        return super.toString() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
+    }
 }
