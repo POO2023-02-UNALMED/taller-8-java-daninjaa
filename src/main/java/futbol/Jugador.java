@@ -17,9 +17,10 @@ public class Jugador extends Futbolista {
 	}
 	
 	@Override
-	public int compareTo(Futbolista futbolista) {
-		return Math.abs(super.getEdad() - futbolista.getEdad());
-	}
+	public int compareTo(Object f){
+        Futbolista f1=(Futbolista)f;
+        return Math.abs(super.getEdad()-f1.getEdad());
+    }
 	
 	@Override
 	public boolean jugarConLasManos() {
