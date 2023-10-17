@@ -40,7 +40,7 @@ public class Portero extends Futbolista implements<Portero>{
 		return true;
 	}
 	
-	
+	@Override
 	public int compareTo(Portero futbolista) {
 		if (futbolista instanceof Portero) {
 			Portero portero = (Portero) futbolista;
