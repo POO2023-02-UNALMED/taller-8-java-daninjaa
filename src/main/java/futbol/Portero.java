@@ -1,5 +1,5 @@
 package futbol;
-public class Portero extends Futbolista implements<Portero>{
+public class Portero extends Futbolista{
 	
 	public short golesRecibidos;
 	public byte dorsal;
@@ -41,7 +41,7 @@ public class Portero extends Futbolista implements<Portero>{
 	}
 	
 	@Override
-	public int compareTo(Portero futbolista) {
+	public int compareTo(Futbolista futbolista) {
 		if (futbolista instanceof Portero) {
 			Portero portero = (Portero) futbolista;
 			return Math.abs(this.golesRecibidos - portero.golesRecibidos);
