@@ -15,9 +15,9 @@ public abstract class Futbolista implements Comparable<Object> {
 		this.posicion = posicion;
 	}
 	@Override
-	public String toString() {
-		return String.format("El futbolista %s tiene %d, y juega de posicion %s", this.nombre, this.edad, this.posicion); 
-	}
+	public String toString(){
+        return "El futbolista " + nombre + " tiene " + edad + ", y juega de " + posicion;
+    }
 	
 	public boolean equals(Futbolista f){
         if (f==this){
